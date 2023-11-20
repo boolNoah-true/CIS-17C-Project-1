@@ -248,13 +248,13 @@ int Game::playRound() {
         cout << endl << "A.I. health: " << endl;
         displayHealthBar(aiHealth, maxHealth);
         cout << endl << "Prime: " << primeCounter << endl;
-        cout << endl << boolalpha << "Prime number is prime: " << isPrime(primeCounter) << endl << endl; //This is for debugging purposes
+        //cout << endl << boolalpha << "Prime number is prime: " << isPrime(primeCounter) << endl << endl; //This is for debugging purposes
         input = 0;
 
         aiData(input);
         aiChoice(artificialInput, input);
 
-        cout << "Input r for rock, p for paper, or s for scissors." << endl;
+        cout << "Input r for rock, p for paper, s for scissors or 1 for Prime." << endl;
 
         cin >> input;
         cout << endl << "Your choice: " << endl;
